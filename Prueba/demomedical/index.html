@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/94c7e3e397.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Inicio</title>
+        <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <div class="sidebar close">
+        <a href="#" class="logo">
+              
+            <div class="logo-name">X</div>
+        </a>
+        <ul class="side-menu">
+            <li class="active"><a><i class='bx bxs-dashboard'></i>Panel General</a></li>
+            <li><a href="sYE.html"><i class='bx bx-map-alt'></i>Salas & Emergencias</a></li>
+            <li><a href="Use.html"><i class='bx bx-user'></i>Usuario</a></li>
+            <li><a href="Conf.html"><i class='bx bx-cog'></i>Configuracion</a></li>
+        </ul>
+
+    </div>
+
+    <div class="content">
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+ 
+            <a href="#" class="profile">
+                <img src="assets/images/logo.png">
+            </a>
+        </nav>
+
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Panel General</h1>
+                </div>
+
+            </div>
+
+            <ul class="insights">
+                <li>
+                    <i class='bx bx-calendar-plus'></i>
+                    <span class="info">
+                        <h3>
+                            6 SAMU
+                        </h3>
+                        <p>ult 15 dias</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-plus'></i>
+                    <span class="info">
+                        <h3>
+                            34
+                        </h3>
+                        <p>Nuevas emergencias</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-line-chart'></i>
+                    <span class="info">
+                        <h3>
+                            21
+                        </h3>
+                        <p>Dados de alta</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-alarm-exclamation'></i>
+                    <span class="info">
+                        <h3>
+                            5
+                        </h3>
+                        <p>Codigo Azul</p>
+                    </span>
+                </li>
+            </ul>
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Doctores en línea</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="https://us.123rf.com/450wm/yupiramos/yupiramos1607/yupiramos160705616/59613224-el-doctor-avatar-perfil-aisl%C3%B3-el-icono-gr%C3%A1fico-del-ejemplo-del-vector.jpg">
+                                    <p>Dr. Carlos Martìn</p>
+                                </td>
+                                <td>Piso 10</td>
+                                <td><span class="status completed">En línea</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://img.freepik.com/vector-premium/avatar-medico-barbudo-doctor-estetoscopio-vector-illustrationxa_276184-31.jpg?w=2000">
+                                    <p>Dr. Joel Doe</p>
+                                </td>
+                                <td>Piso 4</td>
+                                <td><span class="status completed">En línea</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="https://img.freepik.com/vector-premium/avatar-doctora-cabello-negro-doctor-estetoscopio-vector-illustrationxa_276184-33.jpg">
+                                    <p>Dr. Claudia Perez</p>
+                                </td>
+                                <td>Piso 2</td>
+                                <td><span class="status process">Ocupado</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <article class="xart">    
+                    <div id="chart4" class="chart"></div>
+                </article>
+
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div id="chart1" class="chart"></div>
+            </div>
+        </div>
+    </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.0/echarts.min.js"></script>
+        <script src="assets/main.js"></script>
+
+</body>
+
+</html>
